@@ -1,0 +1,24 @@
+# Binarios y ejecutables
+*.exe
+*.out
+*.app
+
+# Objetos y librerías
+*.o
+*.a
+*.so
+*.dylib
+
+# Directorios de build
+build/
+dist/
+*.dSYM/
+
+# Archivos de IDE
+.vscode/
+*.swp
+*.swo
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db

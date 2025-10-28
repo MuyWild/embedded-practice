@@ -1,12 +1,12 @@
 #include <stdio.h>
+#include "factorial.h"
 
-int main() {
-    printf("¡Hola Mundo desde mi primer proyecto C!\n");
-    printf("Este proyecto está versionado con Git y GitHub.\n");
+int main(void) {
+    uint32_t n = 5;
 
-    printf("¡Mi proyecto C ahora está en GitHub!\n");
+    printf("Factorial iterativo de %u = %u\n", n, factorial_iterativo(n));
+    printf("Factorial recursivo de %u = %u\n", n, factorial_recursivo(n));
 
-     printf("¡Mi proyecto C bajar a VScode desde GitHub!\n");
-    
     return 0;
 }
+

@@ -1,18 +1,13 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c99
-SRC = src/main.c
-OBJ = $(SRC:.c=.o)
-TARGET = mi_programa
+CFLAGS = -Iinclude -Wall -Wextra -std=c11
+SRC = src/main.c src/factorial.c
+OUT = mi_programa
 
-all: $(TARGET)
+all: $(OUT)
 
-$(TARGET): $(OBJ)
-	$(CC) $(OBJ) -o $(TARGET)
-
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+$(OUT): $(SRC)
+	$(CC) $(CFLAGS) $(SRC) -o $(OUT)
 
 clean:
-	rm -f $(OBJ) $(TARGET)
+	rm -f $(OUT) src/*.o
 
-.PHONY: all clean

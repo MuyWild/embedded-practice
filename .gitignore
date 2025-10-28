@@ -1,10 +1,19 @@
+# --- Proyecto Embedded Practice ---
+
+# Archivos binarios locales
+mi_programa
+
+# Archivos objeto
+*.o
+
+# --- Reglas generales para proyectos en C/C++ ---
+
 # Binarios y ejecutables
 *.exe
 *.out
 *.app
 
-# Objetos y librerías
-*.o
+# Librerías
 *.a
 *.so
 *.dylib
@@ -22,3 +31,4 @@ dist/
 # Archivos de sistema
 .DS_Store
 Thumbs.db
+

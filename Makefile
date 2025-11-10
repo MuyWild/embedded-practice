@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Iinclude -Wall -Wextra -std=c11
-SRC = src/main.c src/factorial.c
+SRC = src/main.c src/factorial.c src/fibonacci.c src/math_utils.c
 OUT = mi_programa
 
 all: $(OUT)
@@ -10,4 +10,3 @@ $(OUT): $(SRC)
 
 clean:
 	rm -f $(OUT) src/*.o
-
